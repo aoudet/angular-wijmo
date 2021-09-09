@@ -51,6 +51,7 @@ export class AppComponent {
       }
     }
   }
+  
   onCellEditEnded(s: FlexGrid, e: CellRangeEventArgs) {
     var data = s.getCellData(e.row, e.col, false);
     const ranges = s.selectedRanges;
