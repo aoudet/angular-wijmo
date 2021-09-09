@@ -1,1 +1,48 @@
-<wj-flex-grid #flex [keyActionTab]="'CycleOut'"></wj-flex-grid>
+<wj-flex-grid
+  #flex
+  [itemsSource]="data"
+  selectionMode="MultiRange"
+  (selectionChanging)="onSelectionChanging(flex, $event)"
+  (cellEditEnded)="onCellEditEnded(flex, $event)"
+>
+  <wj-flex-grid-column
+    [binding]="'code'"
+    header="code"
+    [width]="'*'"
+    [isReadOnly]="true"
+    [dataMap]="hoursDataMap"
+  >
+  </wj-flex-grid-column>
+  <wj-flex-grid-column
+    [binding]="'description'"
+    header="description"
+    [width]="'2*'"
+    [isReadOnly]="true"
+    [dataMap]="hoursDataMap"
+  >
+  </wj-flex-grid-column>
+  <wj-flex-grid-column
+    [binding]="'value1'"
+    header="value1"
+    [width]="'*'"
+    [isReadOnly]="false"
+    [dataMap]="hoursDataMap"
+  >
+  </wj-flex-grid-column>
+  <wj-flex-grid-column
+    [binding]="'value1'"
+    header="value2"
+    [width]="'*'"
+    [isReadOnly]="false"
+    [dataMap]="hoursDataMap"
+  >
+  </wj-flex-grid-column>
+  <wj-flex-grid-column
+    [binding]="'value3'"
+    header="value3"
+    [width]="'*'"
+    [isReadOnly]="false"
+    [dataMap]="hoursDataMap"
+  >
+  </wj-flex-grid-column>
+</wj-flex-grid>
