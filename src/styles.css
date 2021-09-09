@@ -1,0 +1,20 @@
+/* Add application styles & imports to this file! */
+.wj-bulletgraph {
+  width: 500px;
+  margin: 30px;
+}
+
+/* change the pointer color */
+.wj-bulletgraph .wj-pointer {
+  fill: #2ba3de;
+}
+
+/* for good bullet */
+.bullet-good.wj-bulletgraph .wj-face path {
+  fill: rgb(159 234 159);
+}
+
+/* for bad bullet */
+.bullet-bad.wj-bulletgraph .wj-face path {
+  fill: #eed4d7;
+}
